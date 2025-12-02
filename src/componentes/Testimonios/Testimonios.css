@@ -1,0 +1,36 @@
+/* mueve las flechas fuera del carrusel */
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
+}
+
+/* opcional: aumentar tamaño */
+.swiper-button-prev,
+.swiper-button-next {
+  width: 40px;
+  height: 40px;
+  font-size: 200px;
+}
+
+/* mover la paginación más abajo del carrusel */
+
+.swiper-pagination {
+  bottom: 10px !important; /* ahora queda visible en ese espacio */
+}
+
+:root {
+  --warning: #ffa500;
+  --swiper-navigation-color: #fff; /* flechas */
+  --swiper-pagination-color: #0ff; /* bullets */
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.stars-container {
+  color: var(--warning);
+}

@@ -1,0 +1,125 @@
+#services .services__group {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+#services .service {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius-3);
+  color: var(--color-text);
+  padding: 40px 25px;
+  isolation: isolate;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+#services .service::before,
+#services .service::after {
+  content: "";
+  position: absolute;
+}
+
+#services .service::after {
+  inset: 0.25rem;
+
+  border-radius: calc(1.2rem - 0.25rem);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+#services .service .service__top {
+  display: flex;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/*hover scalable*/
+#services .service:hover {
+  background: transparent;
+  border-color: var(--color-primary);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+#services .icon__container {
+  width: 80px;
+  background: var(--color-ui-2);
+  border: solid 1px var(--color-primary);
+  margin-right: 8px;
+}
+
+#services .service .icon {
+  font-size: 40px;
+  color: var(--color-primary);
+}
+
+#services .service .title {
+  font-size: 25px;
+  background: linear-gradient(to right, var(--color-primary) 0%, var(--color-white) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#services .service .description {
+  max-width: 400px;
+
+  font-size: 14px;
+  line-height: 25px;
+  transition: var(--transition);
+}
+
+#services .service:hover .description {
+  color: var(--color-text);
+}
+
+#services .service .service__bottom {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+#services .service .btn.btn__primary {
+  background: linear-gradient(260deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+  background-size: 200% auto;
+}
+
+/*estilos del boton ver menos*/
+.service__middle {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+/*Responsive*/
+
+@media (max-width: 1000px) {
+  #services .services__group {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  #services .service__top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #services .primary__title {
+    font-size: 25px;
+    text-align: center;
+  }
+  .primary__title {
+    font-size: 23px;
+  }
+  .text__muted {
+    font-size: 14px;
+    text-align: center;
+  }
+}

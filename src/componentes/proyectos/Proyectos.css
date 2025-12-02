@@ -1,0 +1,39 @@
+.grid-debug-container {
+  padding: 2rem;
+  background: white;
+}
+
+.grid-debug {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  gap: 2rem; /* separación entre items */
+  border: 2px solid red;
+}
+
+.grid-debug > div {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+.grid-debug > div:nth-child(1) {
+  background: #60a5fa;
+} /* azul */
+.grid-debug > div:nth-child(2) {
+  background: #86efac;
+} /* verde */
+.grid-debug > div:nth-child(3) {
+  background: #fde047;
+} /* amarillo */
+.grid-debug > div:nth-child(4) {
+  background: #f9a8d4;
+} /* rosa */
+.grid-debug > div:nth-child(5) {
+  background: #c084fc;
+} /* púrpura */
+.grid-debug > div:nth-child(6) {
+  background: #fb923c;
+} /* naranja */
