@@ -1,7 +1,6 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import Image from "next/image";
 
 const Marquee = dynamic(() => import("react-fast-marquee"), { ssr: false });
 
@@ -25,12 +24,10 @@ const EmpresasSlider = () => {
         <Marquee>
           {logos.map((logo, index) => (
             <div key={index} className="mx-8 flex items-center relative w-20 h-10 sm:w-24 sm:h-12 md:w-32 md:h-16">
-              <Image
+              <img
                 src={`/empresas/${logo}`}
                 alt={`Logo ${logo}`}
-                width={120}
-                height={60}
-                className="object-contain   transition duration-300 grayscale hover:grayscale-0"
+                className="w-full h-full object-contain transition duration-300 grayscale hover:grayscale-0"
               />
             </div>
           ))}
