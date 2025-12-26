@@ -9,12 +9,12 @@ const Proyectos = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const proyectos = [
-    { src: "/Imagenes/imagen1.png", titulo: "PROYECTO 1", descripcion: "Sitio web corporativo" },
-    { src: "/Imagenes/ecomerce1.png", titulo: "PROYECTO 2", descripcion: "Tienda online" },
-    { src: "/Imagenes/panel-gestion.png", titulo: "PROYECTO 3", descripcion: "Gestión de inventarios" },
-    { src: "/Imagenes/imagen-responsive.png", titulo: "PROYECTO 4", descripcion: "Páginas web" },
-    { src: "/Imagenes/buscador-imagenes.png", titulo: "PROYECTO 5", descripcion: "Buscador de imágenes" },
-    { src: "/Imagenes/tienda-online2.png", titulo: "PROYECTO 6", descripcion: "Tienda electrónica" },
+    { src: "/imagenes/imagen1.png", titulo: "PROYECTO 1", descripcion: "Sitio web corporativo" },
+    { src: "/imagenes/ecomerce1.png", titulo: "PROYECTO 2", descripcion: "Tienda online" },
+    { src: "/imagenes/panel-gestion.png", titulo: "PROYECTO 3", descripcion: "Gestión de inventarios" },
+    { src: "/imagenes/imagen-responsive.png", titulo: "PROYECTO 4", descripcion: "Páginas web" },
+    { src: "/imagenes/buscador-imagenes.png", titulo: "PROYECTO 5", descripcion: "Buscador de imágenes" },
+    { src: "/imagenes/tienda-online2.png", titulo: "PROYECTO 6", descripcion: "Tienda electrónica" },
   ];
 
   return (
