@@ -25,7 +25,7 @@ const EmpresasSlider = () => {
           {logos.map((logo, index) => (
             <div key={index} className="mx-8 flex items-center relative w-20 h-10 sm:w-24 sm:h-12 md:w-32 md:h-16">
               <img
-                src={`/empresas/${logo}`}
+                src={`/${logo}`}
                 alt={`Logo ${logo}`}
                 className="w-full h-full object-contain transition duration-300 grayscale hover:grayscale-0"
               />
