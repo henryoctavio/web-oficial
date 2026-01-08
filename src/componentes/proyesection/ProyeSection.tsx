@@ -19,7 +19,7 @@ const Proyectos = () => {
 
   return (
     <section id="projects" className="flex flex-col items-center py-12 bg-gray-900">
-      <h2 className="primary__title !mb-4">Proyectos Recientes</h2>
+      <h2 className="primary__title mb-4!">Proyectos Recientes</h2>
       <h3 className="text-base sm:text-lg md:text-xl lg:text-lg text-[#9fa5a5] mb-10 text-center">
         Estos son algunos Proyectos que he creado recientemente...
       </h3>
@@ -30,7 +30,7 @@ const Proyectos = () => {
             <div
               key={i}
               onClick={() => setActiveIndex(activeIndex === i ? null : i)}
-              className="relative w-full aspect-[3/2] group overflow-hidden rounded-lg shadow-[0_0_15px_rgba(255,255,255,0.3)] transform transition duration-500 hover:scale-105"
+              className="relative w-full aspect-3/2 group overflow-hidden rounded-lg shadow-[0_0_15px_rgba(255,255,255,0.3)] transform transition duration-500 hover:scale-105"
             >
               <Image
                 src={proyecto.src}
