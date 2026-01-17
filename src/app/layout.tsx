@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 import Navbar from "@/componentes/Navbar/Navbar";
 import Hablemos from "@/componentes/Hablemos/Hablemos";
@@ -64,8 +65,25 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        {/* ✅ Preload de la imagen de fondo */}
-        <link rel="preload" as="image" href="/herobg.webp" type="image/webp" />
+       
+{/* ✅ Preload de la imagen de fondo */}
+  <link rel="preload" as="image" href="/herobg.webp" type="image/webp" />
+
+  {/* ✅ Google Analytics */}
+  <Script
+    src="https://www.googletagmanager.com/gtag/js?id=G-G1PPRSFSM1"
+    strategy="afterInteractive"
+  />
+
+  <Script id="google-analytics" strategy="afterInteractive">
+    {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-G1PPRSFSM1');
+    `}
+  </Script>
+
       </head>
       <body className="bg-[#030014]">
         {/* ✅ Carga de scripts externos con next/script */}
