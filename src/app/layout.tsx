@@ -17,6 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+    metadataBase: new URL("https://www.nextvisiondev.com"),
   title: "Nextvision Digital Solutions | Diseño y Desarrollo Web Profesional",
   description:
     "Somos Nextvision Digital Solutions, un equipo de expertos en desarrollo y diseño web en Perú. Creamos sitios modernos, rápidos y optimizados para tu negocio.",
